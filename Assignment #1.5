@@ -1,0 +1,95 @@
+public class PersonDriver
+{
+   public static void main(String[] args)
+   {
+   
+      Person p1 = new Person(23,"555-3245","John","Male");
+      
+      System.out.println("Age = " + p1.getAge() + ", Phone Number = " + p1.getPhoneNum() + ", Name = " + p1.getName() + ", Gender = " + p1.getGender());
+      
+      System.out.println(" ");
+      
+      Person p2 = new Person("Alice","Female");
+      
+      System.out.println("Name = " + p2.getName() + ", Gender = " + p2.getGender());
+   
+   }
+}
+
+
+*****************************************************************************BELOW IS THE ACCOMPANYING CLASS FOR THE PROGRAM ABOVE*********************************************************************************************
+
+
+public class Person
+{
+
+   //Attributes
+   
+   private int age;
+   private String name;
+   private String gender;
+   private String phoneNum;
+   
+   
+  //Getters
+  
+   public int getAge()
+   {
+      return age;
+   }
+  
+   public String getPhoneNum()
+   {
+      return phoneNum;
+   }
+  
+   public String getName()
+   {
+      return name;
+   }
+  
+   public String getGender()
+   {
+      return gender;
+   }
+  
+  //Setters
+  
+   public void setAge(int a)
+   {
+      this.age = a;
+   }
+  
+   public void setPhoneNum(String pn)
+   {
+      this.phoneNum = pn;
+   }
+  
+   public void setName(String  n)
+   {
+      this.name = n;
+   }
+  
+   public void setGender(String  g)
+   {
+      this.gender = g;
+   }
+   
+   //Constructors
+   
+   public Person(int age, String phoneNum, String name, String gender)
+   {
+      this.age = age;
+      this.phoneNum = phoneNum;
+      this.name = name;
+      this.gender = gender; 
+   
+   }
+   
+   public Person(String name, String gender)
+   {
+      this.name = name;
+      this.gender = gender;      
+   }
+  
+}
